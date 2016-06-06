@@ -48,58 +48,70 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/topToolBar"
+        android:id="@+id/wx_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mTabMenu"></FrameLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="#909"
+        android:background="#a1a1a1"
         android:layout_above="@+id/mTabMenu"
-        android:layout_height="2dp"></RelativeLayout>
+        android:layout_height="1dp"
+        android:id="@+id/relativeLayout"></RelativeLayout>
     <RadioGroup
         android:layout_alignParentBottom="true"
         android:id="@+id/mTabMenu"
         android:layout_width="fill_parent"
         android:layout_height="54dp"
         android:gravity="center"
-        android:background="#9000"
         android:layout_gravity="bottom"
         android:orientation="horizontal">
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/seletct_tab_contact_list"
-            android:background="@drawable/tab_bg"
-            android:textColor="#fff"
             android:button="@null"
+            android:drawableTop="@drawable/select_tab_weixin"
+            android:textColor="@color/tab_color"
             android:layout_weight="1"
-            android:text="Tab1"
+            android:text="微信"
             android:gravity="center"
-            android:id="@+id/radioButton1"
-            android:checked="false" />
+            android:id="@+id/rb_weixin"
+            android:checked="true" />
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Tab2"
+            android:text="通讯录"
             android:button="@null"
-            android:id="@+id/radioButton"
+            android:drawableTop="@drawable/select_tab_contact_list"
+            android:id="@+id/rb_contact_list"
             android:gravity="center"
+            android:textColor="@color/tab_color"
             android:layout_weight="1"
             android:layout_gravity="center"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Tab3"
+            android:text="发现"
+            android:textColor="@color/tab_color"
             android:button="@null"
+            android:drawableTop="@drawable/select_tab_find"
             android:gravity="center"
             android:layout_weight="1"
-            android:id="@+id/radioButton2"
+            android:id="@+id/rb_find"
             android:layout_gravity="center"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Tab4"
+            android:text="我"
             android:button="@null"
+            android:drawableTop="@drawable/select_tab_profile"
             android:gravity="center"
+            android:textColor="@color/tab_color"
             android:layout_weight="1"
-            android:id="@+id/radioButton3"
+            android:id="@+id/rb_profile"
             android:layout_gravity="center"/>
     </RadioGroup>
 </RelativeLayout>
