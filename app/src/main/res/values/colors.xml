@@ -4,8 +4,15 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="gray">#aaa</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorWhite">#ffff</color>
+    <color name="colorWhite">#ffffff</color>
     <color name="common_top_bar_blue">#22292c</color>
     <color name="online_color">#353535</color>
-    <color name="tab_color">#9A9A9A</color>
+    <color name="tab_color">#999999</color>
+    <color name="net_error">#ffeeee</color>
+
+    <color name="list_item_top">#d9d9d9</color>
+    <color name="list_item_title_1">#353535</color>
+    <color name="list_item_title_2">#586c95</color>
+
+
 </resources>

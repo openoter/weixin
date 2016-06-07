@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".activity.MainActivity">
 
     <RelativeLayout
@@ -74,7 +73,7 @@
             android:layout_height="match_parent"
             android:button="@null"
             android:drawableTop="@drawable/select_tab_weixin"
-            android:textColor="@color/tab_color"
+            android:textColor="@drawable/selector_tab_color"
             android:layout_weight="1"
             android:text="微信"
             android:gravity="center"
@@ -88,14 +87,14 @@
             android:drawableTop="@drawable/select_tab_contact_list"
             android:id="@+id/rb_contact_list"
             android:gravity="center"
-            android:textColor="@color/tab_color"
+            android:textColor="@drawable/selector_tab_color"
             android:layout_weight="1"
             android:layout_gravity="center"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="发现"
-            android:textColor="@color/tab_color"
+            android:textColor="@drawable/selector_tab_color"
             android:button="@null"
             android:drawableTop="@drawable/select_tab_find"
             android:gravity="center"
@@ -109,7 +108,7 @@
             android:button="@null"
             android:drawableTop="@drawable/select_tab_profile"
             android:gravity="center"
-            android:textColor="@color/tab_color"
+            android:textColor="@drawable/selector_tab_color"
             android:layout_weight="1"
             android:id="@+id/rb_profile"
             android:layout_gravity="center"/>

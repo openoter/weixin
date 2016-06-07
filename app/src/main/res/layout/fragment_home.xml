@@ -2,9 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/myText"
-        android:text="微信"
+    <!--连接网络出错-->
+    <include android:id="@+id/connect_error" layout="@layout/connect_net_item"/>
+
+    <ListView
+        android:layout_below="@+id/connect_error"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/home_list"
+        android:background="@android:color/transparent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:divider="@null"
+        android:layout_height="match_parent"></ListView>
 </RelativeLayout>
